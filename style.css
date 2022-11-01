@@ -1,0 +1,161 @@
+
+/* summond the url of font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+
+/* prepared sitting of page */
+
+*{font-family: 'Barlow Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* prepared of root of page */
+:root{--Moderateviolet:hsl(263, 55%, 52%);
+    --Verydarkgrayishblue: hsl(217, 19%, 35%);
+    --Verydarkblackishblue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+/* build body */
+
+body{display: flex;
+    justify-content: center;
+    align-items: center; height: 100vh;
+    background-color: var(--White);
+    flex-direction: column;
+    font-size: 13px;
+    
+}
+/* build main container  */
+
+main{display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color: var(--White);
+    gap: 30px;
+    height: 600px;
+    width: 1440px;
+}
+.container-1{grid-column: 1/3; 
+    background-color:var(--Moderateviolet);
+    grid-row: 1/2;padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 496px 10px;
+}
+/* styling position of all pic   */
+.card{display: flex;
+    align-items: center;
+}
+img{border-radius: 50% ;
+    border: 2px solid var(--White);
+    margin-right: 10px;
+}
+
+/* stayling of title beside of pic */
+
+.main-text{margin: 0px 5px;
+}
+.name{color:var(--White); 
+}
+.name-diff{color: var(--Verydarkblackishblue);
+}
+.title{color: var(--White);
+    opacity: 50%;
+}
+.title-1{color: var(--Verydarkblackishblue);
+opacity: 50%;
+}
+/* styling of text under pic */
+
+.card-text-one{color: var(--White);
+     font-size: 20px;
+     margin: 20px 20px;
+}
+.card-text-two{color: var(--White);
+    opacity: 70%;
+     font-size: 16px;
+     margin: 5px 20px;
+}
+.container-2{grid-column: 3/4;
+     grid-row: 1/2;
+     background-color:var(--Verydarkgrayishblue);
+      border-radius: 15px;
+      padding: 10px 10px;
+}
+
+/* styling of text under pic */
+
+.card-text-three{color: var(--White);
+    font-size: 20px;
+     margin: 20px 20px;
+}
+.card-text-four{color: var(--White);
+    opacity: 70%; 
+    font-size: 16px;
+    margin: 5px 20px;
+}
+.container-3{grid-column: 4/5;
+     grid-row: 1/3;
+     background-color: var(--Light-grayish-blue);
+     border-radius: 15px;
+     padding: 10px 10px;
+}
+
+/* styling of text under pic */
+
+.card-text-five{color: var(--Verydarkblackishblue);
+    font-size: 20px;
+     margin: 20px 20px;
+}
+.card-text-six{color: var(--Verydarkblackishblue);
+    opacity: 70%; 
+    font-size: 16px;
+    margin: 5px 20px;
+}
+.container-4{grid-column: 1/2;
+    grid-row: 2/3;
+    background-color:var(--Light-grayish-blue);
+    border-radius: 15px;padding: 10px 10px;
+}
+/* styling of text under pic */
+
+.card-text-seven{color: var(--Verydarkblackishblue);
+    font-size: 20px;
+    margin: 20px 20px;
+}
+.card-text-eight{color: var(--Verydarkblackishblue);
+    opacity: 70%;
+     font-size: 16px;
+     margin: 5px 20px;
+}
+.container-5{grid-column: 2/4;
+    grid-row: 2/3;
+     background-color: var(--Verydarkblackishblue);
+     border-radius: 15px;padding: 10px 10px;
+}
+
+/* styling of text under pic */
+
+.card-text-nine{color: var(--White);
+    font-size: 20px;
+     margin: 20px 20px;
+}
+.card-text-ten{color: var(--White);
+    opacity: 70%;
+     font-size: 16px;
+     margin: 5px 20px;
+}
+
+/* styling web page for display phone */
+
+@media (max-width:375px){
+        body{display: flex; flex-direction: column;
+        justify-content: center; align-items: center; height: 100vh;padding: 40px 30px;}
+        main{display: flex;flex-direction: column;
+        width: 320px;}
+}
